@@ -1,0 +1,28 @@
+// 2022-09-22
+// 백준 11047번
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int K = sc.nextInt();
+        int cnt = 0;
+
+        Integer[] Arr = new Integer[N];
+
+        for (int i = 0; i < N; i++) {
+            Arr[i] = sc.nextInt();
+        }
+
+        Arrays.sort(Arr,Collections.reverseOrder());
+
+        for (int i = 0; i < N; i++) {
+            cnt += K/Arr[i];
+            K %= Arr[i];
+        }
+        System.out.println(cnt);
+    }
+}
+
