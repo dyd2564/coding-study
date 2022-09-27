@@ -1,0 +1,38 @@
+// 2022-09-27
+// 백준 1439번
+
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String S = sc.next();
+		
+		char[] a = S.toCharArray();
+		
+		
+		int zeroCount = 0;
+		int oneCount = 0;
+		
+		if (a[0] == '0')
+			zeroCount++;
+		else
+			oneCount++;
+		
+		
+		for (int i = 1; i < a.length; i++) {
+			if (a[i-1] != a[i]) {
+				if (a[i] == '0')  
+					zeroCount++;
+				
+				else 
+					oneCount++;
+				
+			}
+		}
+		System.out.println(Math.min(zeroCount, oneCount));
+		
+		
+	}
+}
