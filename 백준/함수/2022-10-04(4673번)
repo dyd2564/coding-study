@@ -1,0 +1,33 @@
+// 2022-10-04
+// 백준 4673번
+
+public class Main {
+	public static void main(String[] args) {
+		
+		int[] arr = new int[10001];
+		int cnt = 0;
+		int selfNum = 0;
+		int i = 0;
+		
+		while (cnt < 10000) {
+			selfNum = cnt;
+			i = cnt;
+			
+			while (i != 0) {
+				selfNum += i % 10;
+				i /= 10;
+			}
+			
+			if (selfNum < 10000)
+				arr[selfNum]++;
+			
+			cnt++;
+		}
+		
+		for (int j = 1; j < 10000; j++) {
+			if (arr[j] == 0) {
+				System.out.println(j);
+			}
+		}
+	}
+}
