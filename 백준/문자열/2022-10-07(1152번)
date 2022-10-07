@@ -1,0 +1,16 @@
+// 2022-10-07
+// 백준 1152번
+
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String word = sc.nextLine();
+		
+		StringTokenizer st = new StringTokenizer(word, " ");
+		System.out.println(st.countTokens());
+	}
+}
