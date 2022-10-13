@@ -1,0 +1,20 @@
+# SW Expert Academy
+# 1859. 백만 장자 프로젝트
+# 2022-10-13
+
+T = int(input())
+
+for test_case in range(1, T+1):
+    a = int(input())
+    price = list(map(int, input().split()))
+    sum = 0
+    max_value = price[-1]
+
+    for i in range(len(price)-1, -1, -1):
+        if price[i] >= max_value:
+            max_value = price[i]
+        sum += max_value - price[i]
+
+    print('#{} {}'.format(test_case, sum))
+
+
