@@ -1,0 +1,15 @@
+def solution(num_list):
+    answer = []
+    evenCnt = 0
+    oddCnt = 0
+    
+    for i in range(len(num_list)):
+        if (num_list[i] % 2 == 0):
+            evenCnt += 1
+        else:
+            oddCnt += 1
+            
+    answer.extend([evenCnt, oddCnt])
+    
+        
+    return answer
