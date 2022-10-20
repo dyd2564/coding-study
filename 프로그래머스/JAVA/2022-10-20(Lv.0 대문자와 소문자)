@@ -1,0 +1,15 @@
+class Solution {
+    public String solution(String my_string) {
+        String answer = "";
+        char[] ch = my_string.toCharArray();
+        for (char i : ch) {
+            if (Character.isLowerCase(i)) {
+                answer += Character.toUpperCase(i);
+            }
+            else {
+                answer += Character.toLowerCase(i);
+            }
+        }
+        return answer;
+    }
+}
