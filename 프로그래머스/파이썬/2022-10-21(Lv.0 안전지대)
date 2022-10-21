@@ -1,0 +1,17 @@
+def solution(board):
+    answer = 0
+    dx = [-1,0,1]
+    dy = [-1,0,1]
+
+    for i in range(len(board)):
+        for j in range(len(board)):
+            if board[i][j]==1:
+                for x in dx:
+                    for y in dy:
+                        if i + x >= 0 and j + y >= 0 and i + x < len(board) and j + y < len(board):
+                            if board[i+x][j+y] != 1:
+                                board[i+x][j+y] = 2
+
+    for i in range(len(board)):
+        answer += board[i].count(0)    
+    return answer
