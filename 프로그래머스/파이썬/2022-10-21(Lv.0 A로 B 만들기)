@@ -1,0 +1,30 @@
+def solution(before, after):
+#     B = list(before)
+#     A = list(after)
+
+#     A.sort()
+#     B.sort()
+#     answer = []
+#     count = 0
+#     for i in range(len(B)):
+#         if A[i] == B[i]:
+#             answer.append(1)
+#         else:
+#             answer.append(0)
+#     for i in range(len(answer)):
+#         if answer[i] == 1:
+#             count += 1
+#         else:
+#             count += 0
+#     if count == len(answer):
+#         return 1
+#     else:
+#         return 0
+    b = sorted(before)
+    a = sorted(after)
+    
+    if b == a:
+        return 1
+    else:
+        return 0
+
