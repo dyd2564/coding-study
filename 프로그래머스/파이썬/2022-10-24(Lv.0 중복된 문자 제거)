@@ -1,0 +1,8 @@
+def solution(my_string):
+    answer = []
+    arr = list(my_string)
+    for i in arr:
+        if i not in answer:
+            answer.append(i)
+    result = ''.join(answer)
+    return result
