@@ -1,0 +1,10 @@
+def solution(balls, share):
+    a = 1
+    b = 1
+
+    for i in range(balls, balls-share, -1):
+        a *= i
+        
+    for i in range(share, 0, -1):
+        b *= i
+    return a/b
