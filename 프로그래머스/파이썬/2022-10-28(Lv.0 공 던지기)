@@ -1,0 +1,6 @@
+def solution(numbers, k):
+    answer = numbers*k
+    idx = 0
+    for i in range(k-1):
+        idx = idx + 2
+    return answer[idx]
