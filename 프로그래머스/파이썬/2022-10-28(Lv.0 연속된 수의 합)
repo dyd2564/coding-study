@@ -1,0 +1,12 @@
+def solution(num, total):
+    answer = []
+
+    for i in range(-100, 100000):
+        sum = 0
+        for k in range(i, i+num):
+            sum += k
+
+        if sum == total:
+            for k in range(i, i+num):
+                answer.append(k)
+            return answer
