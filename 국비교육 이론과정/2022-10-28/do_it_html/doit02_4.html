@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 테이블 -->
+<table border="1">
+    <tr>
+        <th>번호</th>
+        <th>제목</th>
+        <th>글쓴이</th>
+        <th>조회수</th>
+        <th>날짜</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>제목입니다.</td>
+        <td>김철수</td>
+        <td>12</td>
+        <td>2022-10-28</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>제목입니다.2</td>
+        <td>김영희</td>
+        <td>15</td>
+        <td>2022-10-27</td>
+    </tr>
+</table>
+
+<!-- 셀 합치기 -->
+<table border="1">
+    <caption>
+        <p>훈련 신청서</p>
+        <span>자바 웹 프로그래밍 과정</span>
+
+    </caption>
+    <tr>
+        <td>이름</td>
+        <td width="150"></td>
+        <td>연락처</td>
+        <td width="150"></td>
+    </tr>
+    <tr>
+        <td>주소</td>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td>자기소개</td>
+        <td colspan="3"></td>
+    </tr>
+</table>
+<br>
+<table border="1">
+    <caption>제주특별자치도 학교 현황</caption>
+    <thead> <!-- 제목 셀 -->
+        <tr>
+            <td>구분</td>
+            <td>학교 수</td>
+            <td>학급 수</td>
+            <td>학생 수</td>
+            <td>교원 수</td>
+        </tr>
+    </thead>
+    <tbody> <!-- 본문 셀 -->
+        <tr>
+            <td>유치원</td>
+            <td>4</td>
+            <td>1</td>
+            <td>32</td>
+            <td>123</td>
+        </tr>
+        <tr>
+            <td>초등학교</td>
+            <td>521</td>
+            <td>23</td>
+            <td>321</td>
+            <td>231</td>
+        </tr>
+        <tr>
+            <td>중학교</td>
+            <td>123</td>
+            <td>23</td>
+            <td>32</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>고등학교</td>
+            <td>12</td>
+            <td>123</td>
+            <td>512</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>특수학교</td>
+            <td>123</td>
+            <td>412</td>
+            <td>54</td>
+            <td>432</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>합계</td>
+            <td>132</td>
+            <td>123</td>
+            <td>1233</td>
+            <td>1312</td>
+        </tr>
+    </tfoot>    
+</table>
+<br>
+<table border="1">
+    <tr>
+        <td>학교</td>
+        <td>전공</td>
+        <td>비고</td>
+    </tr>
+    <tr>
+        <td>경북대학교</td>
+        <td>국어국문</td>
+        <td rowspan="3"></td>
+    </tr>
+    <tr>
+        <td>영남대학교</td>
+        <td>토목</td>
+    </tr>
+    <tr>
+        <td>영남대학교</td>
+        <td>건축</td>
+    </tr>
+</table>
+
+</body>
+</html>
