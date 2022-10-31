@@ -1,0 +1,7 @@
+def solution(array):
+    answer = []
+    result = max(array)
+    maxIndex = array.index(max(array))
+    answer.append(result)
+    answer.append(maxIndex)
+    return answer
