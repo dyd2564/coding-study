@@ -1,0 +1,13 @@
+def solution(score):
+    average = []
+    answer = []
+
+    for student in score:
+        average.append((student[0] + student[1]) / 2)
+
+    average.sort(reverse = True)
+
+    for student in score:
+        answer.append(average.index((student[0] + student[1]) / 2)+1)
+
+    return answer
