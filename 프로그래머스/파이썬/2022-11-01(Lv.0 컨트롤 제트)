@@ -1,0 +1,12 @@
+def solution(s):
+    answer = 0
+    num_list = s.split()
+    num = []
+    for i in range(len(num_list)):
+        num.append(num_list[i])
+        if num_list[i] == "Z":
+            del num[-1]
+            del num[-1]
+    for j in num:
+        answer += int(j)
+    return answer
