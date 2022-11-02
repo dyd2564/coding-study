@@ -1,0 +1,5 @@
+def solution(dots):
+    dots.sort()
+    x1, y1 = dots[0]
+    x2, y2 = dots[-1]
+    return (x2 - x1) * (y2 - y1)
