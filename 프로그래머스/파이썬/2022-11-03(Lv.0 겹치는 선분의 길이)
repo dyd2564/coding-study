@@ -1,0 +1,8 @@
+def solution(lines):
+    answer = 0
+    line_1 = set(range(min(lines[0]),max(lines[0])))
+    line_2 = set(range(min(lines[1]),max(lines[1])))
+    line_3 = set(range(min(lines[2]),max(lines[2])))
+
+    answer = (line_1 & line_2) | (line_3 & line_2) | (line_1 & line_3)
+    return len(answer)
