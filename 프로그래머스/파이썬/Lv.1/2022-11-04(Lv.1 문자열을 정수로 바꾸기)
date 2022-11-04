@@ -1,0 +1,7 @@
+def solution(s):
+    answer = 0
+   # for i in str(s):
+   #     if i[0] is not i.isdigit():
+   #         return int(i+s[1:])
+            
+    return int(s)
