@@ -1,0 +1,11 @@
+def solution(s, n):
+    answer = ''
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    for i in s:
+        if i == i.upper() and i != ' ':
+            answer += alphabet[alphabet.index(i.lower())+n-26].upper()
+        elif i == i.lower() and i != ' ':
+            answer += alphabet[alphabet.index(i.lower())+n-26]
+        else:
+            answer += ' '
+    return answer
