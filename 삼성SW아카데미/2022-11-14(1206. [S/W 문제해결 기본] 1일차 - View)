@@ -1,0 +1,14 @@
+
+for tc in range(1, 11):
+    N = int(input())
+    build = list(map(int, input().split()))
+    view = 0
+    for i in range(2, N-2):
+        a = build[i] - build[i + 2]
+        b = build[i] - build[i + 1]
+        c = build[i] - build[i - 1]
+        d = build[i] - build[i - 2]
+        if a > 0 and b > 0 and c > 0 and d > 0:
+            view += min(a,b,c,d)
+
+    print('#{} {}'.format(tc, view))
