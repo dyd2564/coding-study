@@ -1,0 +1,22 @@
+for tc in range(10):
+    N = int(input())
+    arr_list = list(input() for _ in range(8))
+    cnt = 0
+    a = ''
+    for i in range(8):
+        for j in range(8-N+1):
+            a = arr_list[i][j:j+N]
+            if a == a[::-1]:
+                cnt += 1
+
+    for i in range(8-N+1):
+        for j in range(8):
+            a = ''
+            for k in range(N):
+                a += arr_list[i+k][j]
+            if a == a[::-1]:
+                cnt += 1
+
+    print('#{} {}'.format(tc+1, cnt))
+
+
