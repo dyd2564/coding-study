@@ -1,0 +1,6 @@
+def solution(nums):
+    answer = len(nums) // 2
+    a = len(set(nums))
+    if a < answer:
+        answer = a
+    return answer
