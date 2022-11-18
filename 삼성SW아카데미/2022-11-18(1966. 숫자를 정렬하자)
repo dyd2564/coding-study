@@ -1,0 +1,10 @@
+T = int(input())
+
+for tc in range(1, T+1):
+    a = int(input())
+    nums = list(map(int, input().split()))
+    sort_nums = sorted(nums)
+    print('#{}'.format(tc), end=' ')
+    for i in range(len(sort_nums)):
+        print(sort_nums[i], end=' ')
+    print()
