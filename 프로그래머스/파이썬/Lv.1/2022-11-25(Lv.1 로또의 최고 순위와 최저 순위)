@@ -1,0 +1,15 @@
+def solution(lottos, win_nums):
+    best, worst = 0, 0
+
+    for i in range(len(lottos)):
+        if lottos[i] in win_nums:
+            best += 1
+            worst += 1
+        if lottos[i] == 0:
+            best += 1
+    if worst == 0:
+        worst = 1
+    if best == 0:
+        best = 1
+    answer = [7-best, 7-worst]
+    return answer
