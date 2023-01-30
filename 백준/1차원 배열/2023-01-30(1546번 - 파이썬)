@@ -1,0 +1,11 @@
+N = int(input())
+score = list(map(int, input().split()))
+max_score = max(score)
+total = 0
+for i in range(len(score)):
+    score[i] = score[i]/max_score*100
+
+for i in range(len(score)):
+    total += score[i]
+
+print(total/N)
