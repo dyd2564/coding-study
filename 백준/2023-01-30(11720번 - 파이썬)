@@ -1,0 +1,10 @@
+N = int(input())
+nums = int(input())
+
+nums_list = list(str(nums))
+ans = 0
+
+for i in nums_list:
+    ans += int(i)
+
+print(ans)
