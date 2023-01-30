@@ -1,0 +1,11 @@
+natural_nums = list(range(1, 10001))
+generate_list = []
+for i in range(1, 10001):
+    for j in str(i):
+        i += int(j)
+    if i <= 10000:
+        generate_list.append(i)
+for generate_nums in set(generate_list):
+    natural_nums.remove(generate_nums)
+for i in natural_nums:
+    print(i)
