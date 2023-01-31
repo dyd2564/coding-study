@@ -1,0 +1,12 @@
+s = input()
+
+upper_letter = list(s.upper())
+upper_list = []
+set_list = list(set(upper_letter))
+for i in set_list:
+    upper_list.append(upper_letter.count(i))
+
+if upper_list.count(max(upper_list)) > 1:
+    print('?')
+else:
+    print(set_list[upper_list.index(max(upper_list))])
